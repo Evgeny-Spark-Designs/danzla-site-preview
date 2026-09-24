@@ -1,0 +1,8 @@
+<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:difference">
+<path d="M4.09091 0H4.90909V4.09091H4.09091V0Z" fill="white"/>
+<path d="M4.09091 4.90909H4.90909V9H4.09091V4.90909Z" fill="white"/>
+<path d="M4.90909 4.90909V4.09091H9V4.90909H4.90909Z" fill="white"/>
+<path d="M0 4.90909V4.09091H4.09091V4.90909H0Z" fill="white"/>
+</g>
+</svg>

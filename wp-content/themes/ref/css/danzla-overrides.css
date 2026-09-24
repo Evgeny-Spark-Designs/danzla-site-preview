@@ -1,0 +1,336 @@
+.header__inner {
+    will-change: transform;
+}
+
+.bold-section__brand-mark {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.bold-section__mid {
+    display: none !important;
+}
+
+.motion-section__bottom {
+    background: #fff9f7;
+}
+
+.motion-section__video {
+    height: 68%;
+    left: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    z-index: 2;
+}
+
+.footer .footer__form .footer__label.input .input__label {
+    color: #FFFFFF !important;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.footer .footer__form .footer__label.input input[type="email"] {
+    caret-color: #5C1F2E;
+    color: #FFFFFF !important;
+    font-size: 1.5rem !important;
+    line-height: 1.5rem !important;
+}
+
+.footer__label input::selection {
+    background: #5C1F2E;
+    color: #F2ECE0;
+}
+
+.footer .footer__form .footer__label.input input[type="email"]:focus,
+.footer .footer__form .footer__label.input input[type="email"]:not(:placeholder-shown) {
+    color: #FFFFFF !important;
+}
+
+.footer .footer__form .footer__label.input:focus-within .input__label,
+.footer .footer__form .footer__label.input:focus-within .input__error {
+    color: #FFFFFF !important;
+}
+
+.footer__label:focus-within input {
+    border-bottom: 1px solid #5C1F2E !important;
+    box-shadow: inset 0 -1px 0 #5C1F2E;
+}
+
+.footer .footer__form .footer__label.input .input__error {
+    bottom: calc(100% + 2.8rem) !important;
+    color: #FFFFFF !important;
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    left: 0 !important;
+    line-height: 1.3rem !important;
+    pointer-events: none;
+    top: auto !important;
+    transform: none !important;
+    width: 24rem !important;
+    z-index: 6 !important;
+}
+
+.arrivals-section__cursor {
+    display: none !important;
+}
+
+@media (min-width: 1024px) {
+    .arrivals-section__group {
+        cursor: default;
+    }
+
+    .arrivals-section__group a {
+        cursor: pointer;
+    }
+}
+
+/* Keep each new hero portrait aligned with the central torn-paper seam. */
+.hero-section__list > li:nth-child(2) .hero-card__img img {
+    object-position: 53% center;
+}
+
+.hero-section__list > li:nth-child(3) .hero-card__img img {
+    object-position: 43% center;
+}
+
+/* Editorial serif treatment for the six new-arrivals cards. */
+.arrivals-section .arrivals-card__title,
+.arrivals-section .arrivals-card__price {
+    font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+    font-style: normal;
+    font-variant-numeric: lining-nums;
+    font-weight: 400;
+    letter-spacing: -.02em;
+}
+
+.arrivals-section .arrivals-card__title {
+    line-height: 1.05;
+}
+
+.arrivals-section .arrivals-card__price {
+    letter-spacing: 0;
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .header__hover li:nth-of-type(1),
+    .header__hover li:nth-of-type(2) {
+        top: 1.8rem;
+    }
+
+    .header__hover li:nth-of-type(3),
+    .header__hover li:nth-of-type(4) {
+        top: 4.4rem;
+    }
+
+    .header__hover li:nth-of-type(5),
+    .header__hover li:nth-of-type(6) {
+        top: 7rem;
+    }
+
+    .header__hover li:nth-of-type(2),
+    .header__hover li:nth-of-type(3) {
+        width: 6.1rem;
+    }
+
+    .header.small .header__hover li:nth-of-type(3) {
+        transform: translate(5.98rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(4) {
+        transform: translate(-16.33rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(5) {
+        transform: translate(13.27rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(6) {
+        transform: translate(-7.29rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(3) span,
+    .header.small .header__hover li:nth-of-type(4) span {
+        transform: translateY(-2.6rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(5) span,
+    .header.small .header__hover li:nth-of-type(6) span {
+        transform: translateY(-5.2rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__hover li:nth-of-type(1),
+    .header__hover li:nth-of-type(2) {
+        top: 3.6rem;
+    }
+
+    .header__hover li:nth-of-type(3),
+    .header__hover li:nth-of-type(4) {
+        top: 6.2rem;
+    }
+
+    .header__hover li:nth-of-type(5),
+    .header__hover li:nth-of-type(6) {
+        top: 8.8rem;
+    }
+
+    .header.small .header__hover li:nth-of-type(3) {
+        transform: translate(13.78rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(4) {
+        transform: translate(-31.93rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(5) {
+        transform: translate(28.88rem);
+    }
+
+    .header.small .header__hover li:nth-of-type(6) {
+        transform: translate(-15.1rem);
+    }
+}
+
+.motion-section__frame {
+    height: 96%;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    z-index: 3;
+}
+
+@media (max-width: 767px) {
+    .motion-section__video {
+        height: auto;
+        width: 60%;
+    }
+
+    .motion-section__frame {
+        height: auto;
+        width: 94%;
+    }
+}
+
+.best-section__top .best-card__video {
+    object-position: 50% 59%;
+}
+
+/* Bag model rail: square studio crops with the product centered. */
+.categories-section__cursor {
+    display: none !important;
+}
+
+.categories-section__inner,
+.categories-section__list {
+    cursor: grab !important;
+}
+
+.categories-section__inner:active,
+.categories-section__list:active {
+    cursor: grabbing !important;
+}
+
+.categories-section__list li {
+    width: 27rem;
+}
+
+.categories-card {
+    aspect-ratio: 1 / 1 !important;
+    background: #fff9f7;
+    cursor: pointer !important;
+    overflow: hidden;
+}
+
+.categories-card::after {
+    display: none;
+}
+
+.categories-card__img-wrapper,
+.categories-card__img {
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.categories-card__img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 64%;
+    transform: scale(var(--bag-scale, 1));
+    transform-origin: center 64%;
+    width: 100%;
+}
+
+.categories-card__title {
+    bottom: 1.3rem;
+    color: #fff;
+    font-size: 2.2rem;
+    left: 1.4rem;
+    line-height: .9;
+    max-width: calc(100% - 2.8rem);
+    mix-blend-mode: difference;
+    position: absolute;
+    text-shadow: none;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.categories-card__text {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .best-section__bottom .best-card {
+        height: 133.333vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .bold-section__img {
+        transform: scale(1.12);
+        transform-origin: center top;
+    }
+
+    .categories-section__list li {
+        width: 28rem;
+    }
+
+    .categories-card__title {
+        font-size: 2.5rem;
+    }
+
+    .categories-section__button {
+        width: 14rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .categories-section__list li {
+        width: 33.6rem;
+    }
+
+    .categories-card__title {
+        bottom: 1.7rem;
+        font-size: 3rem;
+        left: 1.8rem;
+        line-height: .88;
+    }
+
+    /* Let the existing cutout run past the section edge so no seam remains. */
+    .bold-section__img {
+        transform: scale(1.19);
+        transform-origin: center top;
+    }
+}
