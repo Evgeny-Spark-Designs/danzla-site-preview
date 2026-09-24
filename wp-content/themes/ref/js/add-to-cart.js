@@ -543,7 +543,7 @@
         maximumFractionDigits: 2,
       })
         .format(value)
-        .replace(/\s/g, " ") + "_€"
+        .replace(/\s/g, " ") + ""
     );
   }
 
@@ -768,14 +768,14 @@
 
     if (checkoutDiscountEl) {
       const displayDiscount =
-        discountAmount > 0 ? `-${formatPrice(discountAmount)}` : `0,00_€`;
+        discountAmount > 0 ? `-${formatPrice(discountAmount)}` : `0,00`;
       checkoutDiscountEl.innerHTML = `<strong>[</strong> ${displayDiscount} <strong>]</strong>`;
     }
 
     if (checkoutTotalEl) {
       const parsePrice = (str) => {
         if (!str) return 0;
-        let clean = str.replace(/[\[\]_€\s]/g, "");
+        let clean = str.replace(/[\[\]\s]/g, "");
         clean = clean.replace(/\./g, "");
         clean = clean.replace(/,/g, ".");
         return parseFloat(clean) || 0;
