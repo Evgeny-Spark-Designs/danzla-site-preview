@@ -6083,7 +6083,12 @@ var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"s
   var savedHero = 'chocolate', savedStrike = 'chocolate';
   try{ savedHero = localStorage.getItem('dz-hero-color') || 'chocolate'; }catch(e){}
   try{ savedStrike = localStorage.getItem('dz-strike-color') || 'chocolate'; }catch(e){}
-  applyHeroColor(savedHero);
+  // "chocolate" is already baked into the #dz-duotone filter markup by default -
+  // skip the redundant attribute mutation so we don't flash the unfiltered photo
+  // on first paint (mutating the SVG filter right as it renders can briefly
+  // show the raw, unduotoned image, especially on slower connections).
+  if(savedHero !== 'chocolate') applyHeroColor(savedHero);
+  else document.querySelectorAll('[data-dz-group="hero"] .dz-swatch').forEach(function(s){ s.classList.toggle('active', s.dataset.key==='chocolate'); });
   applyStrikeColor(savedStrike);
 
   var btn = document.getElementById('dz-settings-btn');
