@@ -100,8 +100,8 @@
 /* Editorial serif treatment for the six new-arrivals cards. */
 .arrivals-section .arrivals-card__title,
 .arrivals-section .arrivals-card__price {
-    font-family: "Bodoni 72", Didot, "Times New Roman", serif;
-    font-style: normal;
+    font-family: "Literata", Georgia, serif;
+    font-style: italic;
     font-variant-numeric: lining-nums;
     font-weight: 400;
     letter-spacing: -.02em;
