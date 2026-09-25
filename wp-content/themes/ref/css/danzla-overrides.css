@@ -334,3 +334,51 @@
         transform-origin: center top;
     }
 }
+
+/* Calmer homepage pass: one muted brand accent instead of the mixed
+   red/teal/cyan accidents scattered across sections, quieter bracket
+   buttons, and a less oversized material-name overlay. */
+:root {
+    --Red-Main: #5C3D2E;
+    --Blue: #5C3D2E;
+}
+
+.motion-section__text strong,
+.motion-section__scroll strong {
+    color: #5C3D2E;
+}
+
+/* These accent words sit inside a difference-blended block, which turns
+   any color we set here into a random hue depending on the photo
+   underneath (a child's mix-blend-mode can't opt out of that). Drop the
+   separate accent color and let them read as the same plain white as
+   the rest of the sentence instead. */
+.bold-section__top-text strong,
+.bold-section__top-text i,
+.bold-section__bottom-text strong,
+.best-card__text strong {
+    color: inherit;
+    margin-left: 0;
+}
+
+.hero-section__text strong:first-child,
+.hero-section__text strong:last-child,
+.arrivals-section__button strong:first-child,
+.arrivals-section__button strong:last-child,
+.best-card__button strong:first-child,
+.best-card__button strong:last-child,
+.best-card__count strong:first-child,
+.best-card__count strong:last-child,
+.best-section__cursor strong:first-child,
+.best-section__cursor strong:last-child,
+.bold-section__cursor strong:first-child,
+.bold-section__cursor strong:last-child,
+.motion-section__cursor strong:first-child,
+.motion-section__cursor strong:last-child {
+    display: none;
+}
+
+.best-card__title {
+    font-size: 5.5rem;
+    line-height: 1.05;
+}
