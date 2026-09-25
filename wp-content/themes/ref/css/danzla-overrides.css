@@ -382,3 +382,32 @@
     font-size: 5.5rem;
     line-height: 1.05;
 }
+
+/* Tone the big slogan headlines down a step further, and give the
+   smaller supporting text (paragraph under "Тихая роскошь", product
+   names/prices in "02. Новинки") a bit more presence so the scale
+   reads as deliberate rather than "huge headline, tiny everything
+   else". */
+.motion-section__subtitle {
+    font-size: 4.2rem;
+    line-height: 1.05;
+}
+
+.bold-section__top-title,
+.bold-section__bottom-title {
+    font-size: 3.6rem;
+    line-height: 1.05;
+}
+
+.motion-section__text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.arrivals-card__title {
+    font-size: 1.35rem;
+}
+
+.arrivals-card__price {
+    font-size: 1.45rem;
+}
